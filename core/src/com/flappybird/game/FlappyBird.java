@@ -30,7 +30,7 @@ public class FlappyBird extends ApplicationAdapter {
     int pause = 0;
     float birdY = 0;
     float velocity = 0;
-    float gravity = 2;
+    float gravity = 1.4f;
     int gameState = 0;
     int score = 0;
     int scoringTube = 0;
@@ -96,7 +96,7 @@ public class FlappyBird extends ApplicationAdapter {
                     scoringTube = 0;
             }
             if (Gdx.input.justTouched()) {
-                velocity = -30;
+                velocity = -20;
             }
             if (pause < 8) {
                 pause++;
